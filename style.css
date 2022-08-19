@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,600;1,600&display=swap');
+
+*,
+*::before,
+*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  background: hsl(260, 100%, 70%);
+  font-family: 'Source Sans Pro', sans-serif;
+  display: grid;
+  place-items: center;
+  margin: auto;
+  text-align: center;
+}
+
+.music-body{
+  margin: 0.2em auto;
+  max-width: 50rem;
+  width: 85%;
+  height: 55rem;
+  background: hsl(270, 100%, 60%);
+  box-sizing: border-box;
+  padding: 2.5em 0;
+  box-shadow: 0.3rem 0.3rem 0.5rem 1rem #9140ed;
+}
+
+.music-img img{
+  height: 25rem;
+  width: 50%;
+  min-width: 25rem;
+  border-radius: 50%;
+  animation-fill-mode: forwards;
+}
+
+.img-animation{
+  animation-name: rotate-img;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate-img{
+  from{
+    transform: rotate(0deg);
+  }to{
+    transform: rotate(359deg);
+  }
+}
+
+.music-info{
+  color: #f3f3f3;
+}
+
+.music-info h3{
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin: 0.5em;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.music-info h4{
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  padding: 1em 0;
+}
+
+.music-controls{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3em auto;
+  padding: 0 1.5em;
+  transition: all 1s ease-in-out;
+}
+
+.music-controls .fa{
+  font-size: 4rem;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.music-controls .fa:hover{
+  text-shadow: 0.1rem 0.1rem 0.4rem 0.5rem #010101;
+  font-size: 4.1rem;
+}
+
